@@ -1,4 +1,3 @@
-version: '2'
 services:
   irc:
     image: geekduck/ngircd
@@ -16,6 +15,7 @@ services:
     ports:
       - "3708:3708/udp"
   cossacks:
+    user: "${UID}:${GID}"
     build:
       context: ./
       dockerfile: Dockerfile.dev
