@@ -4,12 +4,10 @@ FROM alpine:latest
 ENV rootpath /app
 
 RUN apk update && \
-    apk add python3
+    apk add python3 py3-redis
 
 ADD target/ $rootpath/
 
 WORKDIR $rootpath
-
-RUN pip3 install -r requirements.txt
 
 ENTRYPOINT ["./entrypoint.sh"]
