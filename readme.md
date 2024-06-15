@@ -6,10 +6,10 @@ For *nix systems run `start.sh` and make sure that variable *HOST_NAME* in `.env
 ```
 cat <<EOF > .env
 # your server's hostname
-HOST_NAME=YOUR_HOSTNAME
+HOST_NAME=<your hostname>
 
 # keep alive interval udp
-UDP_KEEP_ALIVE_INTERVAL
+UDP_KEEP_ALIVE_INTERVAL=<your interval>
 
 # user and group id for volume permission
 UID=$(id -u)
