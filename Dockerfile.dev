@@ -1,5 +1,5 @@
 # This is a image of cossacks game server
-FROM debian:stable-slim
+FROM debian:stretch-slim
 EXPOSE 34001
 
 ENV rootpath /app
