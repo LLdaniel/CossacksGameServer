@@ -15,7 +15,7 @@ services:
     ports:
       - "3708:3708/udp"
   cossacks:
-    user: "${UID}:${GID}"
+    #user: "${UID}:${GID}"
     build:
       context: ./
       dockerfile: Dockerfile.dev
