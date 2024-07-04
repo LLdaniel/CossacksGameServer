@@ -1,7 +1,8 @@
 services:
   irc:
-    image: geekduck/ngircd
-    command: "--server-name ${HOST_NAME}"
+    image: lscr.io/linuxserver/ngircd:latest
+    volumes:
+      - ./volume/config/:/config
     ports:
       - "6667:6667"
   redis:
