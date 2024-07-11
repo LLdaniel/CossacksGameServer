@@ -21,5 +21,4 @@ EOF
 Use `./start.sh` to run server
 
 ### TODO
-* fix volumes
 * make start.bat for windows
