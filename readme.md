@@ -22,7 +22,7 @@ Use `./start.sh` to run server
 
 ### Tested Client and Server Combination
 This server is tested with the client version 1.42 from [ereb-thanatos/cossacks-revamp-2017](https://github.com/ereb-thanatos/cossacks-revamp-2017).
-It contains the GSC version and after replacing `play.cossacks-server.net` with the server domain in `internet/ggwdc.ini`, the connection to the server will be possible:
+It contains the GSC version and after replacing `play.cossacks-server.net` with the server's domain in `internet/ggwdc.ini`, the connection to the server will be possible:
 ```ini
 #################################################################
 # This is configuration file for GSC Game World client software #
