@@ -16,10 +16,7 @@ services:
     ports:
       - "3708:3708/udp"
   cossacks:
-    #user: "${UID}:${GID}"
-    build:
-      context: ./
-      dockerfile: Dockerfile.dev
+    image: lldaniel/cossacks-gameserver:latest
     environment:
       - HOST_NAME=${HOST_NAME}
       - UDP_KEEP_ALIVE_INTERVAL=${UDP_KEEP_ALIVE_INTERVAL}
@@ -31,3 +28,4 @@ services:
       - irc
       - redis
       - stun
+    restart: unless-stopped
